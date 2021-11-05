@@ -1,0 +1,362 @@
+/* GENERAL */
+body{
+    font-family: Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: lightblue;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.white{
+    color: white;
+}
+
+.blue{
+    color: blue;
+}
+
+.grey{
+    color: grey;
+}
+
+/* BUTTONS */
+.btn_gen{
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.btn_black{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+.btn_red{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+}
+
+.btn_blue{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+.btn_gray{
+    background-color: lightgray;
+    color: blue;
+    border: 1px solid lightgray;
+}
+
+.btn_white{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+/* HEADER */
+header{
+    font-family: Helvetica, arial, sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* head top */
+.head_top{
+    text-align: right;
+    padding: 10px;
+    background-color: black;
+}
+
+.head_top img{
+    height: 20px;
+    width: auto;
+}
+
+/* head bottom */
+.head_bottom{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adj,.adj img{
+    height: 80px;
+    width: auto;
+}
+
+.head_bottom .left,.head_bottom .middle,.head_bottom .right{
+    display: flex;
+    align-items: center;
+}
+
+.hide,.middle span{
+    display: none;
+}
+
+/* middle */
+.head_bottom .middle span{
+    margin: 0 10px;
+}
+
+/* right */
+.head_bottom .right{
+    text-align: right;
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.head_bottom .right .burger{
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: gray;
+}
+
+.head_bottom .right .hide{
+    margin: 0 10px;
+}
+
+.head_bottom .right img{
+    height: 20px;
+}
+
+@media screen and (min-width:992px ) {
+    .hide,.middle span{
+        display: inline-block;
+    }
+
+    .burger{
+        display: none;
+    }
+}
+
+/* MAIN */
+main{
+    padding-top: 120px;
+}
+
+.my_container{
+    width: 90%;
+    margin: auto;
+}
+
+/* big photo first */
+.big_photo.first{
+    background-image: url(../img/jumbo-bg.png);
+}
+.big_photo{
+    padding-top: 30vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.big_photo img{
+    width: 60%;
+}
+
+.big_photo h2{
+    font-size: 40px;
+}
+
+/* games */
+
+.games .single_game{
+    margin: 0 0 20px;
+    padding: 6px;
+}
+
+.games .single_game img{
+    border-radius: 20px;
+}
+
+.games .single_game:active{
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+
+/* ps5 */
+.ps5 .top{
+    text-align: center;
+}
+
+.ps5 .ps5_infos{
+    align-items: center;
+}
+
+.ps5 .box_accessories{
+    opacity: 0.6;
+    border-bottom: 2px solid white;
+    color: gray;
+}
+
+.ps5 .box_accessories:hover{
+    opacity: 1;
+    border-bottom: 2px solid blue;
+    color: black;
+}
+
+.ps5 .hide_md{
+    display: none;
+}
+
+.small{
+    font-size: 7px;
+    line-height: normal;
+}
+
+@media screen and (min-width:768px) {
+    .ps5 .hide_md{
+        display: inline-block;
+    }
+}
+
+/* big photo second */
+.big_photo.second{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+/* new exit */
+.new_exit{
+    background-color: #1F1F1F;
+}
+
+.new_exit h3{
+    font-size: 30px;
+}
+
+.new_exit .top span{
+    font-size: 20px;
+}
+
+.new_exit img{
+    border-radius: 20px;
+}
+
+/* PS4 */
+.ps4 .top{
+    text-align: center;
+}
+
+.ps4 .far{
+    font-size: 10px;
+    position: relative;
+    bottom: 15px;
+}
+
+/* play plus */
+.play_plus{
+    background-color: #BEBCBB;
+}
+
+.play_plus .my_container{
+    align-items: center;
+}
+
+.play_plus .hide{
+    display: none;
+}
+
+@media screen and (min-width:768px)  {
+    .play_plus .hide{
+        display: inline-block;
+    }
+}
+
+/* discounts */
+.discounts .top{
+    text-align: center;
+}
+
+.discounts .top h2{
+    font-size: 30px;
+}
+
+.discounts .top span{
+    font-size: 20px;
+}
+
+/* ps now */
+.ps_now{
+    background-color: #161C3B;
+}
+
+.ps_now .my_container{
+    align-items: center;
+}
+
+.ps_now .hide{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .ps_now .hide{
+        display: inline-block;
+    }
+}
+
+/* socials */
+.socials .top{
+    text-align: center;
+}
+
+.socials .top h2{
+    font-size: 30px;
+}
+
+.socials img{
+    max-width: 300px;
+}
+
+.socials .bottom{
+    justify-content: center;
+}
+
+/* FOOTER */
+footer{
+    background-color: #00439C;
+    text-align: left;
+}
+
+footer .logo{
+    height: 100px;
+    width: auto;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer a{
+    color: white;
+}
+
+footer .bottom img{
+    max-width: 200px;
+}
+
+footer .bottom a{
+    text-decoration: underline;
+}
+
+@media screen and (min-width:992px) {
+    footer .bottom{
+        width: 50%;
+    }
+}
