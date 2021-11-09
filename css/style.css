@@ -312,6 +312,12 @@ main{
 }
 
 /* socials */
+.my_container_500{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
 .socials .top{
     text-align: center;
 }
